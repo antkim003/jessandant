@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+h1 {
+  font-family: 'Indie Flower';
+  text-align: center;
+  font-size: 45px;
+}
+h3 {
+  font-family: 'Indie Flower';
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+}
+canvas {
+    border-radius: 200px 200px 0 0;
+    margin: 50px auto;
+    display: table-cell;
+    transform: rotate(175deg);
+    -webkit-transform: rotate(175deg);
+}
+.stem, .leaf {
+    background: rgba(143, 188, 143, 0.7);
+    font-family: 'Indie Flower';
+    position: absolute;
+    transform: skew(-5deg, 5deg);
+    -webkit-transform: skew(-5deg, 5deg);
+}
+.leaf {
+    border-radius: 100% 0 100% 0;
+    font-size: 5em;
+    height: 160px;
+    left: 49%;
+    text-align: center;
+    top: 250px;
+    width: 160px;
+}
+.leaf:after {
+  content: '+Jess';
+  left: 60px;
+  position: absolute;
+  top: 65px;
+}
+.stem {
+    font-size: 5em;
+    height: 300px;
+    left: 49%;
+    text-align: center;
+    top: 245px;
+    width: 15px;
+}
+.stem:after {
+    content: '';
+}
+/* Cause fire fox won't center the canvas */
+
+@-moz-document url-prefix() {
+  body{
+    text-align: center;
+  }
+}
